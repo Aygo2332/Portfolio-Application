@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "This is a MERN-based Portfolio Website.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "frontend": "npm start --prefix ./frontend",
+    "dev": "concurrently \"npm run start\" \"npm run frontend\""
+  },
+  "author": "Ayush Goyal",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.13",
+    "nodemailer-mailgun-transport": "^2.1.5",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "nodemon": "^3.1.0",
+    "sass": "^1.75.0"
+  }
+}
